@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_order_history"
+        android:columnCount="2"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="DateTime :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Full Name :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Email :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Phone :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Address :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Food Category :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Food Name :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Quantity :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Total Amount(NPR) :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Payment Method :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDateTimeOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="yyyy/mm/dd 07:45"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvFullNameOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="xyz"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvEmailOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="xyz@gmail.com"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvPhoneOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="1234567890"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvAddressOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="xyz street"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvFoodCategoryOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="MoMo"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvFoodNameOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Steamed Chicken"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvQuantityOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="1"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvTotalAmountOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="190"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tvPaymentMethodOrderList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5dp"
+                android:text="Khalti"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>

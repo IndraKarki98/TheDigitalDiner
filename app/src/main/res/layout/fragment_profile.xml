@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorWhite"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/lyout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/ColorPrimary">
+
+            <TextView
+                android:id="@+id/tvGreeting"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:padding="10dp"
+                android:text=""
+                android:textColor="@color/ColorWhite"
+                android:textSize="21dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lnrlyoutuserprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyout1"
+            android:layout_marginTop="10dp"
+            android:background="@color/ColorWhite"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Full Name :"
+                    android:textColor="@color/ColorPrimary"
+
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvUserFullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="XYXZ@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Email :"
+                    android:textColor="@color/ColorPrimary"
+
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvUserEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="XYXZ@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Phone :"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvUserPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="9800234733"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Address :"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvUserAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="Balaju"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"></TextView>
+            </GridLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llayoutUserMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnrlyoutuserprofile"
+            android:background="@color/ColorWhite"
+            android:orientation="vertical"
+            android:paddingLeft="15dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:alignmentMode="alignMargins"
+                android:columnCount="1"
+                android:columnOrderPreserved="false">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/border_profile_menu"
+                    android:fontFamily="@font/nunito_bold"
+                    android:gravity="center_vertical"
+                    android:text="Menu"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="21dp"></TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/border_profile_menu"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:onClick="goToEditProfile"
+                    android:text="Edit Profile"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/border_profile_menu"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:onClick="goToOrderHistory"
+                    android:text="Order History"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="18dp"></TextView>
+
+                <TextView
+                    android:id="@+id/tvLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border_profile_menu"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:text="Logout"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="18dp"></TextView>
+            </GridLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
